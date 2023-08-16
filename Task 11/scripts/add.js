@@ -10,7 +10,7 @@ form.addEventListener("submit", async (event) => {
     console.log(response)
     if (!response.msg) throw new Error(response.error || "Something went wrong")
     alert(response.msg)
-    window.location.href = "/"
+    window.location.href = "../index.html"
   } catch (error) {
     alert(error.message)
   }
